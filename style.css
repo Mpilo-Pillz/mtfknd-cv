@@ -1,3 +1,5 @@
+/* MEDIA QUERRIES */
+@media only screen and (min-width: 600px) {
 /* 
 HTML TAGS
 */
@@ -6,12 +8,28 @@ header {
     background-color: teal;
     color: white;
     height: 200px;
+    line-height: 1.5rem;
+    padding: 10px;
+}
+
+main {
+    position: relative;
+    padding: 20px;
 }
 
 /* 
 CLASSES
 */
 
+.about-me {
+    
+}
+
+.my-profile {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
 .cv-wrapper {
     padding: 30px 0 60px 0;
 }
@@ -25,4 +43,11 @@ CLASSES
 
 .shadow {
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+}
+
+/* IDs */
+#profile-pic {
+    border-radius: 50%;
+}
+
 }
