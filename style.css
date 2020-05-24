@@ -1,5 +1,55 @@
+/* 
+HTML TAGS
+*/
+body, html {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    line-height: 2rem;
+}
+header {
+    background-color: teal;
+    color: white;
+    /* height: 200px; */
+    /* line-height: 1.5rem; */
+    padding: 70px;
+}
+
+.contact-details {
+    font-size: 0.8rem;
+}
+
+/* classes */
+.my-profile {
+    background-color: teal;
+    color: white;
+    padding: 20px 70px 70px 45px;
+    
+}
+
+.profile-image {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.text-align--center {
+    text-align: center;
+}
+
+/* IDs */
+#profile-pic {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+
+
+
 /* MEDIA QUERRIES */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 850px) {
 /* 
 HTML TAGS
 */
@@ -8,13 +58,14 @@ header {
     background-color: teal;
     color: white;
     height: 200px;
-    line-height: 1.5rem;
-    padding: 10px;
+    /* line-height: 1.5rem; */
+    padding: 70px;
+    position: relative;
 }
 
 main {
     position: relative;
-    padding: 20px;
+    padding: 20px 20px 20px 70px;
 }
 
 /* 
@@ -22,13 +73,24 @@ CLASSES
 */
 
 .about-me {
-    
+   max-width: 600px; 
+}
+
+.about-me-heading {
+    font-size: 2rem;
+    padding: 30px;
+    border-bottom: 2px solid teal;
+    margin-bottom: 30px;
 }
 
 .my-profile {
     position: absolute;
-    right: 0;
-    top: 20px;
+    right: 30px;
+    top: 45px;
+    background-color: #454747;
+    min-height: 90vh;
+    width: 350px;
+    /* padding: 20px 70px 70px 22px; */
 }
 .cv-wrapper {
     padding: 30px 0 60px 0;
@@ -38,16 +100,16 @@ CLASSES
     margin: auto;
 }
 .paper--max-width {
-    max-width: 1000px;
+    max-width: 1100px;
+}
+
+.profile-image {
+    height: 250px;
+    width: 250px;
 }
 
 .shadow {
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
-}
-
-/* IDs */
-#profile-pic {
-    border-radius: 50%;
 }
 
 }

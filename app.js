@@ -4,21 +4,21 @@ const data = [
     company: "Osiris Trading",
     techstack: "Angular 2-9, Javascript, CSS, HTML",
     duration: "October 2019 - present",
-    image: "https://picsum.photos/200/300?grayscale"
+    image: "./assets/fikasentani.jpg"
   },
   {
     title: "Software Development Engineer in Test",
     company: "Osiris Trading",
     techstack: "Selenium, C-sharp, SpecFlow, Appium",
     duration: "November 2018 - September 2019",
-    image: "https://picsum.photos/200/300"
+    image: "./assets/nikita.jpg"
   },
   {
     title: "Test Automation Engineer",
     company: "Standard Bank",
     techstack: "Protractor, Selenium, Python, Cucumber",
     duration: "November 2015 - November 2018",
-    image: "https://picsum.photos/seed/picsum/200/300"
+    image: "./assets/thulani.jpg"
   },
 ];
 
