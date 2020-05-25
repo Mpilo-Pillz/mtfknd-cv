@@ -42,7 +42,7 @@ function nextWorkExperience() {
     `;
 
     document.getElementById('imageDisplay').innerHTML = `
-        <image src="${currentWorkExperience.image}">
+        <image class="career-img" src="${currentWorkExperience.image}">
     `;
 } else {
     window.location.reload();
