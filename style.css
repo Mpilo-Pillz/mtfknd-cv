@@ -33,6 +33,10 @@ main {
     
 }
 
+.cv-font--lg {
+    font-size: 1.3rem;
+}
+
 .cv-margin-bottom--md {
     margin-bottom: 25px;
 }
@@ -136,6 +140,10 @@ CLASSES
 .about-me-heading {
     font-size: 2rem;
     padding: 30px;
+}
+
+.cv-font--lg {
+    font-size: 2rem;
 }
 
 .my-profile {
