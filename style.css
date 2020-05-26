@@ -47,6 +47,19 @@ header {
     text-align: center;
 }
 
+.ul__list-style--inside {
+    list-style:  inside;
+    
+}
+
+.ul__list-style--square {
+    list-style:  inside square;
+}
+
+.ul__padding--sides {
+    padding: 0 20px;
+}
+
 /* IDs */
 
 #next{
