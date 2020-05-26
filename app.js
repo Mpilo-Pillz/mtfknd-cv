@@ -17,11 +17,11 @@ const data = [
     techstack: "Selenium, C-sharp, SpecFlow, Appium, Jenkins",
     duration: "November 2018 - September 2019",
     image: "./assets/nikita.jpg",
-    bulletpointone: "Create and Maintain Automated end to end tests using Selenium to test web applications",
-    bulletpointtwo: "Create and Maintain Automated tests that execute on Mobile Native Android iOS Apps and Mobile web browsers using Appium",
-    bulletpointthree: "Create readable and maintainable that conform to user acceptance criteria using Gherkin style syntax with SpecFlow and Cucumber",
-    bulletpointfour: "Build and Maintain CI pipeline for automated scheduled execution of regression tests using Jenkins",
-    bulletpointfive: "Train non techncal testers on how to build, maintain and execute automated tests"
+    bulletpointone: "Create and Maintain Automated end to end tests using Selenium to test web applications.",
+    bulletpointtwo: "Create and Maintain Automated tests that execute on Mobile Native Android iOS Apps and Mobile web browsers using Appium.",
+    bulletpointthree: "Create readable and maintainable that conform to user acceptance criteria using Gherkin style syntax with SpecFlow and Cucumber.",
+    bulletpointfour: "Build and Maintain CI pipeline for automated scheduled execution of regression tests using Jenkins.",
+    bulletpointfive: "Train non techncal testers on how to build, maintain and execute automated tests."
   },
   {
     title: "Test Automation Engineer",
@@ -41,8 +41,10 @@ const workExperiences = workExperienceIterator(data);
 
 nextWorkExperience();
 
-document.querySelector('#next').addEventListener('click', nextWorkExperience);
-
+document.querySelectorAll('.next').forEach(button => {
+  button.addEventListener('click', nextWorkExperience);
+});
+document.querySelectorAll
 function nextWorkExperience() {
     const currentWorkExperience = workExperiences.next().value;
 
