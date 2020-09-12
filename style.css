@@ -6,6 +6,7 @@ body, html {
     font-weight: 300;
     line-height: 2rem;
 }
+
 header {
     background-color: teal;
     color: white;
@@ -224,15 +225,17 @@ CLASSES
 }
 
 .my-profile {
+    background-color: #454747;
     display: block;
+    left: 700px;
+    min-height: 90vh;
+    opacity: 1;
+    padding: 20px 30px 70px 30px;
     position: absolute;
     right: 30px;
     top: 45px;
-    background-color: #454747;
-    min-height: 90vh;
     width: 350px;
     z-index: 3;
-    padding: 20px 70px 70px 45px;
 }
 
 
@@ -244,6 +247,10 @@ CLASSES
 
 .cv-wrapper {
     padding: 30px 0 60px 0;
+}
+
+.display-none {
+    display: none;
 }
 
 .header--underline-white {
