@@ -1,7 +1,9 @@
 const toggleInfo = document.querySelector('#toggle');
 const closeButton = document.querySelector('#closeBackdrop');
+const closeIcon = document.querySelector('#closeIcon');
 const myInfo = document.getElementById('myProfile');
 const modalBackDrop = document.getElementById('modalBackdrop');
+
 const data = [
   {
     title: "Front End Web Developer",
@@ -49,6 +51,10 @@ function removeToggleViewClass() {
     myInfo.classList.remove('toggle-view');
     modalBackDrop.classList.remove('toggle-view');
 }
+
+closeIcon.addEventListener('click', function() {
+  removeToggleViewClass();
+});
 
 modalBackDrop.addEventListener('click', function() {
   removeToggleViewClass();

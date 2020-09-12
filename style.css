@@ -34,6 +34,13 @@ main {
     width: 100%;
 }
 
+.close {
+    display: flex;
+    font-size: 32px;
+    font-weight: bolder;
+    justify-content: flex-end;
+}
+
 .contact-details {
     /* Note to self, use this for further styling of detals*/
 }
@@ -220,6 +227,10 @@ CLASSES
     padding: 30px;
 }
 
+.close {
+    display: none;
+}
+
 .cv-font--lg {
     font-size: 2rem;
 }
@@ -287,6 +298,7 @@ CLASSES
 .stack {
     background-color: white;
     color: #454747;
+    padding-left: 10px;
 }
 
 .view-profile {
