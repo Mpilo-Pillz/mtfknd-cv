@@ -1,3 +1,7 @@
+const toggleInfo = document.querySelector('#toggle');
+const closeButton = document.querySelector('#closeBackdrop');
+const myInfo = document.getElementById('myProfile');
+const modalBackDrop = document.getElementById('modalBackdrop');
 const data = [
   {
     title: "Front End Web Developer",
@@ -41,10 +45,29 @@ const workExperiences = workExperienceIterator(data);
 
 nextWorkExperience();
 
+function removeToggleViewClass() {
+    myInfo.classList.remove('toggle-view');
+    modalBackDrop.classList.remove('toggle-view');
+}
+
+modalBackDrop.addEventListener('click', function() {
+  removeToggleViewClass();
+});
+
+toggleInfo.addEventListener('click', () => {
+    myInfo.classList.add('toggle-view');
+    modalBackDrop.classList.add('toggle-view');
+});
+
+closeButton.addEventListener('click', () => {
+  removeToggleViewClass();
+});
+
 document.querySelectorAll('.next').forEach(button => {
   button.addEventListener('click', nextWorkExperience);
 });
-document.querySelectorAll
+
+// document.querySelectorAll
 function nextWorkExperience() {
     const currentWorkExperience = workExperiences.next().value;
 
@@ -81,7 +104,6 @@ function nextWorkExperience() {
 
 function workExperienceIterator(workExperiences) {
     let nextIndex = 0;
-
     return {
       next: function () {
         return nextIndex < workExperiences.length

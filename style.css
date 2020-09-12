@@ -9,7 +9,8 @@ body, html {
 header {
     background-color: teal;
     color: white;
-    padding: 70px;
+    padding: 30px;
+    text-align: center;
 }
 
 main {
@@ -18,6 +19,14 @@ main {
 
 /* classes */
 
+.btn {
+    border: none;
+    background-color:  #454747;
+    color: #fff;
+    font-weight: 900;
+    padding: 10px 30px;
+    margin: 10px auto 15px auto;
+}
 .career-img {
     object-fit: contain;
     height: 300px;
@@ -30,7 +39,6 @@ main {
 
 .contact-details--font {
     font-size: 0.8rem;
-    
 }
 
 .cv-font--lg {
@@ -59,11 +67,19 @@ main {
     margin-bottom: 30px;
 }
 
+.modal-backdrop {
+    display: none;
+}
 
 .my-profile {
     background-color: teal;
     color: white;
-    
+    display: none;
+    left: 0;
+    opacity: 0;
+    padding: 20px;
+    position: absolute;
+    top: 0;
 }
 
 .profile-image {
@@ -76,9 +92,14 @@ main {
     text-align: center;
 }
 
+.toggle-view {
+    display: block;
+    animation: fadeInFromNone 1s ease-in-out;
+    opacity: 1;
+}
+
 .ul__list-style--inside {
-    list-style:  inside;
-    
+    list-style:  inside; 
 }
 
 .ul__list-style--square {
@@ -89,7 +110,62 @@ main {
     padding: 0 20px;
 }
 
+.view-profile {
+    animation: grow ease-in-out 5s;
+    border-bottom: 2px dashed #fff;
+    color: #fff;
+}
+
+@keyframes grow {
+    0% { 
+        border-bottom: 2px dashed #50c4e7;
+        color:#50c4e7;
+        font-size: 18px;
+     }
+    25% { 
+        border-bottom: 2px dashed #fff; 
+        color: #fff; 
+        font-size: 15px; 
+    }
+    50% { 
+        border-bottom: 2px dashed #fff; 
+        color : #fff; 
+        font-size: 18px; 
+    }  
+    100% { 
+        border-bottom: 2px dashed #50c4e7; 
+        color : #50c4e7; 
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        left: -10;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        left: -10;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        left: 13;
+        opacity: 1;
+    }
+}
+
 /* IDs */
+
+#modalBackdrop {
+    background-color: hsla(0, 0%, 0%, 0.69);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
 
 #next{
     width: 100%;
@@ -122,6 +198,7 @@ header {
     height: 200px;
     padding: 70px;
     position: relative;
+    text-align: left;
 }
 
 main {
@@ -147,6 +224,7 @@ CLASSES
 }
 
 .my-profile {
+    display: block;
     position: absolute;
     right: 30px;
     top: 45px;
@@ -204,7 +282,15 @@ CLASSES
     color: #454747;
 }
 
+.view-profile {
+    display: none;
+}
+
 /* IDS */
+
+#modalBackdrop {
+    display: none;
+}
 
 #profile-pic {
     height: 100%;
@@ -215,3 +301,9 @@ CLASSES
 }
 
 }
+
+/* @media only screen and (max-width: 340px){
+.my-profile {
+    transform: translate(-13%, -5%);
+}
+} */
