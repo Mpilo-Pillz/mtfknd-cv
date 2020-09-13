@@ -100,7 +100,7 @@ function nextWorkExperience() {
     `;
 
     document.getElementById('imageDisplay').innerHTML = `
-        <image class="career-img" src="${currentWorkExperience.image}">
+        <image class="career-img" src="${currentWorkExperience.image}" alt="${currentWorkExperience.title}">
     `;
 } else {
     window.location.reload();
