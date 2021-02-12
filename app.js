@@ -8,14 +8,14 @@ const data = [
   {
     title: "Front End Web Developer",
     company: "Osiris Trading",
-    techstack: "Angular 2-9, Javascript, CSS, HTML",
+    techstack: "Angular 2-11, Javascript, TypeScript, CSS, HTML, Kentico CMS",
     duration: "October 2019 - present",
     image: "https://lh3.googleusercontent.com/ajV2k9dREbiUxhQFeGbifYAfGmsjTIJ14JjQUG75Q_m8xQARalXHdG5zpsAvy-dIV_xXnjVNe40IPo9RYHxdOpWcFxurkIsRRuzo1rHGNuphiXt1yezrM36w1zQ_CL2aXva4HhPY=w2400",
-    bulletpointone: "Build and maintain Sports betting web app using Angular 2-9.",
+    bulletpointone: "Build and maintain Sports betting web app using Angular 2-11.",
     bulletpointtwo: "Render content from Content Management Services onto Angular Web Application.",
     bulletpointthree: "Consume content from Content Management Systems and render on to Angular Web Applications.",
-    bulletpointfour: "Build and maintain small reusable web view components/widgets/iframes to be consumed by ntive Android and IOS apllications.",
-    bulletpointfive: "Use Angular, HTML, CSS and Javascript to build and maintain web apps that can make CRUD requests on to various APIS for various business problems."
+    bulletpointfour: "Build and maintain small reusable web view components/widgets/iframes to be consumed by native Android and IOS applications.",
+    bulletpointfive: "Use Angular, HTML, CSS and Javascript to build and maintain web apps that can make CRUD requests on to various APIS for various business problems, such as web apps for marketing company products and promotions."
   },
   {
     title: "Software Development Engineer in Test",
